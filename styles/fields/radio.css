@@ -3,13 +3,13 @@ label + .radio-wrapper{
 }
 
 
-.radio-wrapper{
+.radio-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(7.5rem,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem,1fr));
   gap: 1rem;
 }
 
-.radio-inner{
+.radio-inner {
  border: 1px solid var(--stroke-default);
  border-radius: .5rem;
 
@@ -21,9 +21,8 @@ label + .radio-wrapper{
 
   position: relative;
   & input,
-  & input-focus,
+  & input:focus,
   & input:hover{
-    all: unset;
     position: absolute;
     inset: 0;
   }
@@ -51,7 +50,7 @@ label + .radio-wrapper{
     border: 2px solid var(--stroke-hightlight);
 
   & .radio-image{
-    background-image: url(../../assets/icons/radio-default.svg);
+    background-image: url(../../assets/icons/radio-checked.svg);
   }
   }
 
